@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="designer" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>国家选择插件</title>
+  <link href="../dist/css/base.css" rel="stylesheet" type="text/css" />
+  <link href="../dist/css/module.css" rel="stylesheet" type="text/css" />
+  <link href="../dist/css/countrySelect.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+  /* 以下样式仅限当前演示案例使用，无需复制到正式项目中 */
+  .wrapper {
+    min-height: 200vh;
+    padding: 50px 0;
+  }
+
+
+  @media (max-width: 991.98px) {
+    .wrapper {
+      min-height: 250vh;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- 使用示例 -->
+    <input type="text" id="countryInput" placeholder="选择国家">
+  </div>
+</body>
+
+</html>
+<script type="text/javascript" src="../dist/js/countrySelect.min.js"></script>
+<script type="text/javascript">
+	// 初始化插件示例
+  const countrySelector = new CountrySelector({
+    inputId: 'countryInput',
+    language: 'zh', // 或 'en'
+    showFlag: true,
+    preferredCountries: ['CN', 'US'],
+    excludedCountries: [], // 排除不显示的国家
+    defaultValue: '', // 设置默认值国家, 'CN'
+    enableSearch: true, // 启用搜索功能
+    showDivider: true // 显示分隔线
+  });
+</script>
