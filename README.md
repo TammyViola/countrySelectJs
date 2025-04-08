@@ -1,8 +1,8 @@
 # countrySelectJs
 
 #### 介绍
-国家选择插件，可以显示英文或中文，包含输入过滤等。
-当前版本1.0，国家数据源更新时间：2025.04.07
+国家/地区选择插件，可以显示英文或中文，包含输入过滤等。
+当前版本1.0，国家/地区数据源更新时间：2025.04.07
 
 #### HTML 调用
 	<html>
@@ -12,7 +12,7 @@
 
 		<body>
 			<!-- 被绑定的控件 -->
-			<input type="text" id="countryInput" placeholder="选择国家">
+			<input type="text" id="countryInput" placeholder="选择国家/地区">
 		</body>
 
 		<script type="text/javascript" src="./dist/js/countrySelect.min.js"></script>
