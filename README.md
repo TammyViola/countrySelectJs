@@ -6,7 +6,8 @@
 
 
 #### 更新说明
-将国旗图标默认格式从svg改为了webp
+1. 将国旗图标默认格式从svg改为了webp
+2. 新增onChange事件：自定义function，国家选择更改时，会返回当前选择的国家对象，并执行自定义function
 
 #### HTML 调用
 	<html>
