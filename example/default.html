@@ -38,10 +38,11 @@
 </html>
 <script type="text/javascript" src="../dist/js/countrySelect.min.js"></script>
 <script type="text/javascript">
-	// 初始化插件示例
+  // 初始化插件示例
   const countrySelector = new CountrySelector({
     inputId: 'countryInput',
-    language: 'zh', // 或 'en'
+    language: 'zh', // 'en', 'zh', 'tyft', 'tw', 'hk'
+    placeholder: '',
     showFlag: true,
     preferredCountries: ['CN', 'US'],
     excludedCountries: [], // 排除不显示的国家
